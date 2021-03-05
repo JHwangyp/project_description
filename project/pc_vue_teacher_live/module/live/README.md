@@ -167,3 +167,11 @@ ext：tell_manager_closeWalfarePop
 data：{"askUserId":""}
 说明：学生点击关闭弹框时，在im中发送该消息
 ```
+
+#### 【新增】服务器端发起的，告知所有人视频流和白板流地址
+
+```
+ext：adminBroadcast
+data {"type": "trtcUrlNtf", "userId": "", "info": { "trtcUrl": "", "writeUrl": "" }}
+说明：trtcUrl是视频流地址，writeUrl是白板流地址
+```
